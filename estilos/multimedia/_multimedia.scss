@@ -1,0 +1,36 @@
+
+.multimedia{
+    display: grid;
+    width: 100%;
+    padding: 0px 0px 300px 0px;
+    @include movil{
+    justify-content: center;
+    }
+    
+&__contenedor{
+    width: 100px;
+    padding: 5rem 2rem 2rem 5rem;
+    @include tablet{
+        padding: unset;
+    }
+    
+}
+&__contenedor img{
+    border-radius: 10%;
+    border: 1em solid black;
+    @include tablet{
+        width: 179px;
+    }
+}
+&__subtitulo{
+    font-size: 3.2rem;
+    padding: 2rem ;
+    color: blanchedalmond;
+    
+}
+}
+iframe{
+    @include movil{
+    width: 340px;
+    }
+}

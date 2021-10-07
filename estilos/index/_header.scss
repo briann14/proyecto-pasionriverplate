@@ -1,0 +1,193 @@
+
+$titulo: 4rem ;
+$negro: rgb(3, 3, 3);
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: black;
+    font-family: "Oswald", sans-serif;
+    font-style: italic;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+}
+    html {
+        font-family: calibri;
+        font-size: 8px;
+        position: relative;
+}
+@keyframes fanimado{
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 30%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+    /*index*/
+    /*grid*/
+    .grid-container > *{
+        box-shadow: -1px 1px 7px 0px rgb(49, 42, 42);
+        border-radius: 4px;
+        text-align: center;
+    }
+    .grid-container{
+    background: rgb(7, 6, 6);
+    background: linear-gradient(324deg, rgb(0, 0, 0) 20%,  #2a0303 60%, rgb(0, 0, 0) 20%);
+    background-size:500%;
+    animation: fanimado 5s infinite;
+        grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "article"
+        "sidebar"
+        "aside"
+        "footer";
+}
+    /*navegable*/
+    
+      @include tablet{
+        display: flex;
+        flex-direction: row;
+      }
+    
+.nav-item{
+    font-size: 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.title{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    @include tablet{
+      width: 87%;
+      display: flex;
+      justify-content: start;
+    }
+    
+    &__img{
+      width: 86px;
+      @include tablet{
+        width: 60px;
+      }
+    }
+    
+}
+
+.glitch {
+    color: rgb(223, 191, 191);
+    position: relative;
+    font-size: 4rem;
+    text-transform: uppercase;
+    // margin: 70px 200px;
+    animation: glitch 5s 5s infinite;
+    @include tablet{
+      font-size: 3.2rem;
+    }
+}
+  
+.glitch::before {
+    content: attr(data-text);
+    position: absolute;
+    
+    text-shadow: -5px 0 rgb(240, 11, 11);
+    background: rgb(8, 8, 8);
+    overflow: hidden;
+    top: 0;
+    animation: noise-1 4s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+  }
+  
+  .glitch::after {
+    
+    position: absolute;
+    text-shadow: -5px 0 lightgreen;
+    background: rgb(8, 8, 8);
+    overflow: hidden;
+    top: 0;
+    animation: noise-2 1s linear infinite alternate-reverse, glitch 5s 5s infinite;
+  }
+
+  @keyframes glitch {
+    1%{
+      transform: rotateX(10deg) skewX(90deg);
+    }
+    2%{
+      transform: rotateX(0deg) skewX(0deg);
+    }
+  }
+  
+  @keyframes noise-1 {
+    $steps: 30;
+    @for $i from 1 through $steps {
+      #{percentage($i*(1/$steps))} {
+        $top: random(100);
+        $bottom: random(101 - $top);
+        clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+      }
+    }
+  }
+  
+  @keyframes noise-2 {
+    $steps: 30;
+    @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+        $top: random(100);
+        $bottom: random(101 - $top);
+        clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+      }
+    }
+  }
+  
+  .scanlines {
+    overflow: hidden;
+    mix-blend-mode: difference;
+  }
+  
+  
+  
+  @keyframes fudge {
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(0px, 2%);
+    }
+  }
+  
+  .glow {
+    @extend .glitch;
+    text-shadow: 0 0 1000px rgb(241, 10, 10);
+    color: transparent;
+    position: absolute;
+    top: 0;
+  }
+  
+ 
+  
+  @keyframes glitch-2 {
+    1%{
+      transform: rotateX(10deg) skewX(70deg);
+    }
+    2%{
+      transform: rotateX(0deg) skewX(0deg);
+    }
+  }
+
+  .fa fa-facebook{
+  width: 100px;
+  }

@@ -1,0 +1,80 @@
+/*article*/
+.caja-subtitulo{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subtitulo{
+    font-size: 3rem;
+    color: blanchedalmond;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+.article-estadisticas{
+    width: 60%;
+    height: 100%;
+}
+.tabla{
+border-collapse: collapse;
+border: 0.1em solid rgb(7, 6, 6);
+width: 30%;
+@include tablet{
+    width: 50%;
+}
+@include movil{
+    width: 100%;
+}
+
+}
+.tabla__titulo{
+display: flex;
+font-size: 2.2em;
+background: green;
+color: rgb(243, 236, 236);
+border: .1em solid rgb(10, 2, 2);
+text-shadow: 1em 1em 1em #000;
+text-transform: uppercase;
+flex-direction: column;
+}
+.tabla__color{
+background: rgb(226, 167, 154);
+
+}
+.tabla__pos{
+font-size:.9em;
+width: 100%;
+text-align: center;
+background: rgb(255, 245, 245);
+list-style-type: upper-alpha;
+
+tr,th{
+    font-size: 2rem;
+    text-decoration: none;
+    color:rgb(7, 2, 2);
+    border: 0.1em solid rgb(12, 7, 7);
+}
+}
+.aside--tabla{
+    width: 35%;
+    
+    @include movil{
+        width: 100%;
+    }
+    
+}
+.tabla--aside{
+    width: 100%;
+    @include tablet{
+        width: 100%;
+    }
+}
+
+.footer--2{
+    display:flex;
+    justify-content: start;
+    @include movil{
+        justify-content: center;
+    }
+}
