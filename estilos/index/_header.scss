@@ -5,7 +5,6 @@ $negro: rgb(3, 3, 3);
 * {
     margin: 0;
     padding: 0;
-    
 }
 body{
     background: black;
@@ -35,13 +34,12 @@ body{
     /*index*/
     /*grid*/
     .grid-container > *{
-        box-shadow: -1px 1px 7px 0px rgb(49, 42, 42);
         border-radius: 4px;
         text-align: center;
     }
     .grid-container{
     background: rgb(7, 6, 6);
-    background: linear-gradient(324deg, rgb(0, 0, 0) 20%,  #2a0303 60%, rgb(0, 0, 0) 20%);
+    background: linear-gradient(324deg, rgb(19, 18, 18) 20%,  #790d0d 60%, rgb(19, 18, 18) 20%);
     background-size:500%;
     animation: fanimado 5s infinite;
         grid-template-areas:
@@ -54,12 +52,10 @@ body{
         "footer";
 }
     /*navegable*/
-    
-      @include tablet{
+    @include tablet{
         display: flex;
         flex-direction: row;
-      }
-    
+}
 .nav-item{
     font-size: 3rem;
     padding: 1rem;
@@ -73,7 +69,6 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
     @include tablet{
       width: 87%;
       display: flex;
@@ -100,20 +95,16 @@ body{
       font-size: 3.2rem;
     }
 }
-  
 .glitch::before {
     content: attr(data-text);
     position: absolute;
-    
     text-shadow: -5px 0 rgb(240, 11, 11);
     background: rgb(8, 8, 8);
     overflow: hidden;
     top: 0;
     animation: noise-1 4s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
   }
-  
   .glitch::after {
-    
     position: absolute;
     text-shadow: -5px 0 lightgreen;
     background: rgb(8, 8, 8);
@@ -158,8 +149,6 @@ body{
     mix-blend-mode: difference;
   }
   
-  
-  
   @keyframes fudge {
     from {
       transform: translate(0px, 0px);
@@ -177,8 +166,6 @@ body{
     top: 0;
   }
   
- 
-  
   @keyframes glitch-2 {
     1%{
       transform: rotateX(10deg) skewX(70deg);
@@ -187,7 +174,6 @@ body{
       transform: rotateX(0deg) skewX(0deg);
     }
   }
-
   .fa fa-facebook{
   width: 100px;
   }

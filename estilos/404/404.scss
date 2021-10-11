@@ -13,7 +13,6 @@ $body: 'Lato', sans-serif;
     background-image: url(https://esteeselfamosoriver.com/wp-content/uploads/2018/11/imagenes-de-river-plate-para-fondos-de-pantalla-wallpaper-de-river-estadio-monumental-vespucio-liberti.jpg);
     opacity: .8;
 }
-
 .top {
     width: 100%;
   }
@@ -64,7 +63,7 @@ $body: 'Lato', sans-serif;
     letter-spacing: 1px;
     border: 0;
     &:hover {
-      background: $gray;
-      transition: all .4s ease-out;
+    background: $gray;
+    transition: all .4s ease-out;
     }
   }

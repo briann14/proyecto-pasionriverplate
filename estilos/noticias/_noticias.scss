@@ -1,17 +1,15 @@
 /*noticias*/
-
 .noticias{
-    display: grid;
-    width: 100%;
-    padding: 0px 0px 300px 0px;
+        display: grid;
+        width: 100%;
+        padding: 0px 0px 300px 0px;
     &__contenedor1{
         width: 100%;
         padding: 2rem 2rem 2rem 5rem;
         @include tablet{
-            padding: unset;
+        padding: unset;
         }
     }
-    
     &__contenedor{
         width: 100%;
         display: flex;
@@ -19,7 +17,6 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        
     }
     &__contenedor figure{
         position:relative;
@@ -74,18 +71,16 @@
         max-width: 220px;
         margin: auto;
     }
-
-&__contenedor img{
-    border-radius: 10%;
-    border: 1em solid black;
+    &__contenedor img{
+        border-radius: 10%;
+        border: 1em solid black;
     @include tablet{
         width: 179px;
     }
 }
-&__subtitulo{
-    font-size: 3.2rem;
-    padding: 2rem ;
-    color: blanchedalmond;
-    
+    &__subtitulo{
+        font-size: 3.2rem;
+        padding: 2rem ;
+        color: blanchedalmond;
 }
 }
