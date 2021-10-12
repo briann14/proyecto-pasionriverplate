@@ -79,7 +79,7 @@ $grid:grid;
     display: $grid;
     width: 100%;
     overflow: hidden;
-    padding: 0px 0px 50px 0px;
+    padding: 50px 0px 50px 0px;
 }
 .contenedor{
     display: flex;
@@ -115,9 +115,33 @@ $grid:grid;
     color: $white;
     font-family:'Open Sans';
 }
+
+/*polideportivo*/
+.polideportivo{
+    padding: 20px 0px  0px 0px;
+&__contenedor{
+    display: flex;
+    justify-content: center;
+}
+&__parrafo{
+    width: 800px;
+    font-size: 3rem;
+    color: $white;
+    font-family:'Open Sans';
+}
+/*carousel modificado polideportivo*/
+.carousel-img--polideportivo{
+    width: 70%;
+    height: 500px;
+    @include movil{
+        height: 280px;
+        width: 100%;
+    }
+}
+}
+
+/*formulario modificacion*/
 .contenedor-form{
     width: 100%;
     padding: 0px 0px 600px 0px;
 }
-
-
