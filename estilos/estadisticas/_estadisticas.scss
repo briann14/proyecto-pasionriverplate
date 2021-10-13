@@ -10,17 +10,17 @@
     font-size: 3rem;
     color: blanchedalmond;
     text-transform: uppercase;
-    font-family: cursive;
 }
+
 /*tabla estadisticas*/
 .article-estadisticas{
     width: 60%;
     height: 100%;
 }
 .tabla{
-border-collapse: collapse;
-border: 0.1em solid rgb(7, 6, 6);
-width: 30%;
+    border-collapse: collapse;
+    border: 0.1em solid rgb(7, 6, 6);
+    width: 36%;
 @include tablet{
     width: 50%;
 }
@@ -29,24 +29,24 @@ width: 30%;
 }
 }
 .tabla__titulo{
-display: flex;
-font-size: 2.2em;
-background: green;
-color: rgb(243, 236, 236);
-border: .1em solid rgb(10, 2, 2);
-text-shadow: 1em 1em 1em #000;
-text-transform: uppercase;
-flex-direction: column;
+    display: flex;
+    font-size: 2.2em;
+    background: green;
+    color: rgb(243, 236, 236);
+    border: .1em solid rgb(10, 2, 2);
+    text-shadow: 1em 1em 1em #000;
+    text-transform: uppercase;
+    flex-direction: column;
 }
 .tabla__color{
-background: rgb(226, 167, 154);
+    background: rgb(226, 167, 154);
 }
 .tabla__pos{
-font-size:.9em;
-width: 100%;
-text-align: center;
-background: rgb(255, 245, 245);
-list-style-type: upper-alpha;
+    font-size:.9em;
+    width: 100%;
+    text-align: center;
+    background: rgb(255, 245, 245);
+    list-style-type: upper-alpha;
 tr,th{
     font-size: 2rem;
     text-decoration: none;
@@ -54,24 +54,26 @@ tr,th{
     border: 0.1em solid rgb(12, 7, 7);
 }
 }
+
 /*tabla de goleadores aside*/
 .aside--tabla{
     width: 35%;
     @include movil{
-        width: 100%;
+    width: 100%;
     }
 }
 .tabla--aside{
     width: 100%;
     @include tablet{
-        width: 100%;
+    width: 100%;
     }
 }
+
 /*arreglo footer para estadisticas*/
 .footer--2{
     display:flex;
     justify-content: start;
     @include movil{
-        justify-content: center;
+    justify-content: center;
     }
 }

@@ -24,26 +24,10 @@
     font-size: 2rem;
 }
 
-
-    /*Header*/
-    .logo{
-    height: 120px;
-}
+/*Header*/
     img{
         max-width: 100%;
 }
-.header{
-    grid-area:header;
-    background-color: rgb(151, 24, 24);
-    height: 122px;
-}
-.container-header{
-    display: flex;
-    flex-wrap: wrap;
-    height: 122px;
-    background: rgb(212, 43, 4);
-}
-
 /*fondo de los jugadores*/
 .jugadores{
     background-image: url("https://pbs.twimg.com/media/DojeE78X4AA-YMf.jpg:large");
@@ -68,6 +52,12 @@
     width: 100%;
     grid-area: sidebar;
     padding: 20px 0px 190px 0px;
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
     @include movil{
         display: block;
     }
@@ -77,6 +67,9 @@
 .article{
     height: 100%;
     width: 50%;
+    @include tablet{
+        width: 75%;
+    }
     &__titulo{
         font-size:$titulo;
         text-transform: uppercase;

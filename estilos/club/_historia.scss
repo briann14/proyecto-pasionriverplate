@@ -32,7 +32,8 @@ $grid:grid;
         0% { background-position: 0% 50%; }
         100% { background-position: 100% 50%; }
         }
-        /*Cards historia*/
+
+    /*Cards historia*/
         .container-historia{
             width: 100%;
             display: flex;
@@ -49,8 +50,8 @@ $grid:grid;
             margin: 20px;
             text-align: center;
             transition: all 0.25s;
-            @include movil{
-                height: 330px;
+        @include movil{
+            height: 330px;
             }
         }
         .container-historia .card:hover{
@@ -77,66 +78,66 @@ $grid:grid;
             text-decoration: none;
             color: #f61a1a;
         }
-    /*Monumental*/
-.contenedor-historia{
-    display: $grid;
-    width: 100%;
-    overflow: hidden;
-    padding: 50px 0px 50px 0px;
-}
-.contenedor{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-.contenedor__img{
-    position: relative;
-    display: inline-block;
-    flex-direction: row;
-    justify-content: center;
-    height: 90%;
-}
-.contenedor__zoom:hover{
-    transition: transform .9s;
-    overflow: hidden;
-    transform: scale(1.5);
-}
-.contenedor__parrafo{
-    font-size: 3rem;
-    color: $white;
-    font-family:'Open Sans';
-}
 
-/*polideportivo*/
-.polideportivo{
-    padding: 20px 0px  0px 0px;
-&__contenedor{
-    display: flex;
-    justify-content: center;
-}
-&__parrafo{
-    width: 800px;
-    font-size: 3rem;
-    color: $white;
-    font-family:'Open Sans';
-}
-}
-/*carousel modificado polideportivo*/
-.carousel-img--polideportivo{
-    width: 70%;
-    height: 500px;
-    @include tablet{
-        height: 280px;
-        width: 80%;
-    
-    @include movil{
-        height: 280px;
-        width: 100%;
-    }
-}
-}
-/*formulario modificacion*/
-.contenedor-form{
-    width: 100%;
-    padding: 0px 0px 600px 0px;
-}
+    /*Monumental*/
+        .contenedor-historia{
+            display: $grid;
+            width: 100%;
+            overflow: hidden;
+            padding: 50px 0px 50px 0px;
+        }
+        .contenedor{
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .contenedor__img{
+            position: relative;
+            display: inline-block;
+            flex-direction: row;
+            justify-content: center;
+            height: 90%;
+        }
+        .contenedor__zoom:hover{
+            transition: transform .9s;
+            overflow: hidden;
+            transform: scale(1.5);
+        }
+        .contenedor__parrafo{
+            font-size: 3rem;
+            color:blanchedalmond;
+            font-family:'Open Sans';
+        }
+
+    /*polideportivo*/
+        .polideportivo{
+            padding: 20px 0px  0px 0px;
+        &__contenedor{
+            display: flex;
+            justify-content: center;
+        }
+        &__parrafo{
+            width: 800px;
+            font-size: 3rem;
+            font-family:'Open Sans';
+            color: blanchedalmond;
+        }
+        }
+    /*carousel modificado polideportivo*/
+        .carousel-img--polideportivo{
+            width: 70%;
+            height: 500px;
+        @include tablet{
+            height: 280px;
+            width: 80%;
+        @include movil{
+            height: 280px;
+            width: 100%;
+        }
+        }
+        }
+    /*formulario modificacion*/
+        .contenedor-form{
+            width: 100%;
+            padding: 0px 0px 600px 0px;
+        }

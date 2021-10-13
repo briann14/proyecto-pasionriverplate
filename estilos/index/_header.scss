@@ -51,14 +51,13 @@ body{
         "aside"
         "footer";
 }
-    /*navegable*/
 
+/*navegable*/
 .nav-item{
     font-size: 3rem;
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .title{
     width:100%;
     display: flex;
@@ -70,7 +69,6 @@ body{
       display: flex;
       justify-content: start;
     }
-    
     &__img{
       width: 86px;
       @include tablet{
