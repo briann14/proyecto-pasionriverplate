@@ -49,6 +49,9 @@ $grid:grid;
             margin: 20px;
             text-align: center;
             transition: all 0.25s;
+            @include movil{
+                height: 330px;
+            }
         }
         .container-historia .card:hover{
             transform: translateY(-15px);
@@ -91,24 +94,12 @@ $grid:grid;
     display: inline-block;
     flex-direction: row;
     justify-content: center;
-    overflow: hidden;
     height: 90%;
 }
 .contenedor__zoom:hover{
-    transition: transform .5s;
+    transition: transform .9s;
     overflow: hidden;
     transform: scale(1.5);
-}
-.contenedor__abajo{
-    position: absolute;
-    top: 102%;
-    left: 20%;
-    font-size: 3.2rem;
-    color:$white;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    overflow: hidden;
 }
 .contenedor__parrafo{
     font-size: 3rem;
@@ -129,17 +120,21 @@ $grid:grid;
     color: $white;
     font-family:'Open Sans';
 }
+}
 /*carousel modificado polideportivo*/
 .carousel-img--polideportivo{
     width: 70%;
     height: 500px;
+    @include tablet{
+        height: 280px;
+        width: 80%;
+    
     @include movil{
         height: 280px;
         width: 100%;
     }
 }
 }
-
 /*formulario modificacion*/
 .contenedor-form{
     width: 100%;

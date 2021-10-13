@@ -34,12 +34,12 @@ body{
     /*index*/
     /*grid*/
     .grid-container > *{
-        border-radius: 4px;
-        text-align: center;
+      border-radius: 4px;
+      text-align: center;
     }
     .grid-container{
     background: rgb(7, 6, 6);
-    background: linear-gradient(324deg, rgb(19, 18, 18) 20%,  #790d0d 60%, rgb(19, 18, 18) 20%);
+    background: linear-gradient(324deg, rgb(19, 18, 18) 20%,  #240404 60%, rgb(15, 15, 15) 20%);
     background-size:500%;
     animation: fanimado 5s infinite;
         grid-template-areas:
@@ -52,15 +52,11 @@ body{
         "footer";
 }
     /*navegable*/
-    @include tablet{
-        display: flex;
-        flex-direction: row;
-}
+
 .nav-item{
     font-size: 3rem;
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 .title{
@@ -83,7 +79,7 @@ body{
     }
     
 }
-
+/*nav*/
 .glitch {
     color: rgb(223, 191, 191);
     position: relative;

@@ -2,7 +2,7 @@
 .multimedia{
     display: grid;
     width: 100%;
-    padding: 0px 0px 300px 0px;
+    padding: 0px 0px 100px 0px;
     @include movil{
         justify-content: center;
     }
@@ -28,7 +28,31 @@
 }
 }
 iframe{
+    margin: 2px;
     @include movil{
     width: 340px;
     }
+}
+
+/*fotos*/
+.fotos{
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 200px 0px;
+&__img{
+    width: 28%;
+    height: 25%;
+    border-radius: 10px;
+    border: black 1em solid;
+    margin: 2px;
+    @include pc{
+        width: 28%;
+    @include tablet{
+        width: 80%;
+    @include movil{
+        width: 99%;
+    }   
+    }
+}
+}
 }
