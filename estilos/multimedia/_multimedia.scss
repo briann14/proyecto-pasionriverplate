@@ -11,7 +11,9 @@
     padding: 5rem 2rem 2rem 5rem;
     @include tablet{
         padding: unset;
-        
+        @include movil-s{
+            width: 99%;
+        }
     }
 }
 &__contenedor img{
@@ -30,12 +32,15 @@
 }
 }
 iframe{
-    margin: 2px;
+    margin: 6px;
     @include movil{
-    width: 340px;
+    width: 97%;
+    margin:0px 0px 12px 0px;
+    @include movil-s{
+        width: 99%;
     }
 }
-
+}
 /*fotos*/
 .fotos{
     width: 100%;
@@ -47,14 +52,15 @@ iframe{
     border-radius: 10px;
     border: black 1em solid;
     margin: 2px;
-    @include pc{
-        width: 28%;
     @include tablet{
         width: 80%;
     @include movil{
-        width: 99%;
+        width: 95%;
+        margin: 0px 0px 15px 0px;
+        @include movil-s{
+            width: 89%;
+        }
     }   
     }
-}
 }
 }
