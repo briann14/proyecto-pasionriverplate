@@ -987,8 +987,8 @@ iframe {
 
 @media screen and (max-width: 478px) {
   .tabla__titulo {
-    width: 95%;
-    margin: 2px 2px 2px 10px;
+    width: 98%;
+    margin: 2px 0px 0px 2px;
   }
 }
 
@@ -1006,12 +1006,13 @@ iframe {
 
 @media screen and (max-width: 478px) {
   .tabla__pos {
-    width: 94%;
-    margin: 2px 2px 2px 12px;
+    width: 97%;
+    margin: 2px 0px 0px 4px;
   }
 }
 
 .tabla__pos tr, .tabla__pos th {
+  width: 2rem;
   font-size: 2rem;
   text-decoration: none;
   color: #070202;
