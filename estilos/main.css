@@ -937,6 +937,7 @@ iframe {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 25px 0px 0px 0px;
 }
 
 .subtitulo {
@@ -1042,12 +1043,13 @@ iframe {
 
 /*arreglo footer para estadisticas*/
 .footer--2 {
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media screen and (max-width: 478px) {
@@ -1055,6 +1057,7 @@ iframe {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
