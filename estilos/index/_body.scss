@@ -10,6 +10,7 @@
     width: 100%;
     height: 500px;
     padding: 0px 0px 10px 0px;
+    object-fit: cover;
     @include tablet{
     width: 100%;
     height: 300px;
@@ -78,11 +79,14 @@
 }
     &__img{
         border-radius: 10%;
-        border: .5em solid black;
+        border: .5em solid rgb(98, 95, 95);
 }
     &__column {
         float: left;
-        width: 50%;
+        width: 48%;
+        margin-right: 5px;
+        margin-left: 1.4px;
+        margin-top: 12px;
 }
     @include movil{
     width: 100%;
